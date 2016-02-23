@@ -60,11 +60,13 @@ val square2 = Square(3.0)
 println(square2)
 val circle = new Circle(2.0)
 println(circle)
+
 //Polymorphism
 val shape0 = rectangle
 val shape1 = square1
 val shape2 = square2
 val shape3 = circle
+
 //Dynamic Binding
 val shape = new Rectangle(9.0, 8.0)
 println(shape)
