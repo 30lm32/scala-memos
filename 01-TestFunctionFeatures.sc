@@ -19,7 +19,6 @@ r2(x => 2 * x, 2)
 //r5(x => y => 2)
 def fog3(g : Int => Int, x : Int) = g(x) + 2
 val r3 = fog3(x => 2 * x, _ : Int)
-
 //2-Closures - First-class Functions  ==============
 val a = 2
 val b = 5
@@ -37,19 +36,16 @@ val compareVs0 = v0(1, 2) == v1(1, 2) == (v1(1, 2) == v2(1, 2))
 def fog4(x : Int, g : Int => Int) = g(x) + 2
 def r4(x : Int) = fog4(x, y => 2 * y)
 r4(2)
-
 //4-Curring Functions
 def f(x: Int)(y: Int) = x + y
 var first = f(1)_ //_ is one of partial function
 var second = first(2)
-
 //4-Pass Parameter by using curly braces
 def fog5(x : Int)(g : Int => Int) = g(x) + 2
 val r5 = fog5(2)
 {
   x => 2 * x
 }
-
 //5-By-name Parameters
 def fog6(x: Int)(g : => Int) = g + 2
 val r6 = (x : Int) => fog6(x){x * 2}

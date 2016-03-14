@@ -72,3 +72,4 @@ val shape = new Rectangle(9.0, 8.0)
 println(shape)
 var shapes = List[Shape](shape0, shape1, shape2, shape3)
 shapes.foreach(println)
+
