@@ -1,4 +1,4 @@
-# MyScala
+# Scala Memos
 In this repo, you can find my personal memos I took to keep tracking of the context of Scala while learning it.
 
     0-Internal Function
