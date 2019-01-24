@@ -50,10 +50,10 @@ var b1 = s0.substring(2) eq s1.substring(2) // false
 
 
 def error(message : String) : Nothing =
-throw new RuntimeException(message)
+  throw new RuntimeException(message)
 def divide(x : Int, y : Int) : Int =
-if(y != 0) x / y;
-else error("Can't divide by zero")
+  if(y != 0) x / y;
+  else error("Can't divide by zero")
 
 var l = List[Int](1, 2, 3, 4)
 
